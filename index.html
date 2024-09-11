@@ -1,23 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css"/>
+<!--Aqui é o cabeçalho do código alinhado ao centro-->
+	<title>COPS - Centros Olímpicos e Paralímpidos do DF</title>
+</head>
+<body>
+
+<!--Aqui é o cabeçalho do formulário-->
+	<div class="container">
+		<section class="header">
+			<h2>COP's - Ficha de Inscrição do Atleta</h2>
+		</section>
+
+<!--Aqui é o corpo do formulário-->
+		<form id="form" class="form">
+			<h3>Preencha seus dados nos campos abaixo:</h3>
+			<br><br>
+
+			<div class="form-content error">
+				<label for="username"><strong>Nome completo:</strong></label>
+				<input type="text" id="username" placeholder="Digite o nome do atleta..." required>
+				<a>O nome do atleta é obrigatório !</a>
+			</div>
+
+			<br>
+
+			<div class="form-content error">
+				<label for="address"><strong>Endereço:</strong></label>
+				<input type="text" id="address" placeholder="Digite o endereço do atleta..." required>
+				<a>O endereço do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content error">
+				<label for="addressbairro"><strong>Bairro:</strong></label>
+        		<input type="text" id="address-bairro" placeholder="Digite o bairro do atleta..." required>
+				<a>O bairro do atleta é obrigatório !</a>
+			</div>
+
+			<br>
+			
+			<div class="form-content error">
+				<label for="addresscep"><strong>CEP:</strong></label>
+        		<input type="text" id="address-cep" placeholder="Digite o CEP do atleta..." required>
+				<a>O CEP do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content error">
+				<label for="email"><strong>E-mail:</strong></label>
+				<input type="text" id="email" placeholder="Digite o e-mail do atleta..." required>
+				<a>O email do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content error">
+				<label for="telefone"><strong>Telefone:</strong></label>
+				<input type="text" id="telefone" placeholder="Digite o telefone do atleta..." required>
+				<a>O telefone do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content error">
+				<label for="tipodeficiencia"><strong>Qual o tipo de deficiência do atleta:</strong></label>
+				<input type="text" id="tipo-deficiencia" placeholder="Digite aqui..." required>
+				<a>O tipo de deficiência do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content">
+				<label for="comunidadepcd"><strong>Participa de alguma associação ou comunidade PCD?:</strong></label>
+					<select id="comunidade-pcd">
+						<option selected disabled value=""></option>
+						<option>Sim</option>
+						<option>Não</option>
+					</select>
+			</div>
+		
+			<div class="form-content error">
+				<label for="nomecomunidadepcd"><strong>Se SIM. Qual?:</strong></label>
+				<input type="text" id="nome-comunidade-pcd" placeholder="Digite aqui..." required>
+				<a>O nome da comunidade PCD do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content">
+				<label for="programasocial"><strong>Participa de algum programa social do GDF?:</strong></label>
+					<select id="programa-social">
+						<option selected disabled value=""></option>
+						<option>Sim</option>
+						<option>Não</option>
+					</select>
+			</div>
+
+			<div class="form-content error">
+				<label for="nomeprogramasocial"><strong>Se SIM. Qual?:</strong></label>
+				<input type="text" id="nome-programa-social" placeholder="Digite aqui..." required>
+				<a>O nome do programa social do atleta é obrigatório !</a>
+			</div>
+			
+			<br>
+			
+			<div class="form-content">
+				<label for="unidadecop"><strong>Selecione a unidade em que deseja treinar:</strong></label>
+					<select id="unidade-cop">
+						<option selected disabled value=""></option>
+						<option>Unid. Ceilândia</option>
+						<option>Unid. Gama</option>
+						<option>Unid. Riacho Fundo I</option>
+						<option>Unid. Recanto das Emas</option>
+						<option>Unid. Samambaia</option>
+					</select>
+			</div>
+
+		<center>
+			<div class="buttonsave">
+				<button type="submit">Salvar</button>
+			</div>
+		
+			<div class="button"></div>
+				<button type="submit">Enviar</button>
+			</div>
+		</center>
+		<br>
+	<!--Aqui é o fechamento do formulario-->
+	</form>
+</div>
+<script src="./script.js"></script>
+ 
+</body>
 </html>
